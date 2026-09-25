@@ -1,0 +1,755 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0c">
+<title>Владимир Ишмяков — 3D-художник / 3D Generalist</title>
+<meta name="description" content="3D-визуализация с вниманием к продукту и его деталям. Предметная визуализация, 3D-моделирование, анимация, архитектурная визуализация.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#hero">К содержанию</a>
+<div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar"></span></div>
+<div id="glow-cursor" class="glow-cursor" aria-hidden="true">
+  <canvas class="glow-cursor__canvas"></canvas>
+</div>
+
+<!-- ШАПКА -->
+<header class="header" id="top">
+  <div class="header__inner">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="burger" aria-label="Меню"><span></span></label>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#process">Как работаю</a></li>
+        <li><a href="#pricing">Стоимость</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+      <a class="btn btn--small" href="#contact">Обсудить проект</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__text">
+        <h1 class="h1">
+          <span
+            class="depth-text"
+            data-depth-text
+            data-text="3D-визуализация"
+            data-layers="28"
+            data-depth="2.2"
+            data-tilt="6"
+            data-orbit-speed="0.32"
+            aria-label="3D-визуализация"
+          ></span>
+          <br>
+          <span class="shiny-text">с вниманием к продукту <em>и&nbsp;его деталям</em></span>
+        </h1>
+        <p class="lead">Создаю реалистичные 3D-изображения и анимацию для товаров, рекламы, презентаций и архитектурных проектов.</p>
+        <p class="hero__sub text-muted">Помогаю показать форму, материалы, конструкцию и особенности продукта — ещё до фотосъёмки или запуска производства.</p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#contact">Обсудить проект</a>
+          <a class="btn btn--ghost" href="#portfolio">Смотреть работы</a>
+        </div>
+
+        <p class="note hero__note">Можно обратиться с готовым техническим заданием или просто рассказать, что нужно показать.</p>
+      </div>
+
+      <figure class="hero__visual">
+        <div class="media media--brand">
+          <div class="media__glow" aria-hidden="true"></div>
+          <img class="hero__logo" src="logo.jpg" alt="Design Art Motion — логотип">
+        </div>
+        <figcaption class="hero__caption">Design Art Motion</figcaption>
+      </figure>
+
+      <ul class="tags">
+        <li>Предметная визуализация</li>
+        <li>3D-моделирование</li>
+        <li>Анимация</li>
+        <li>Архитектурная визуализация</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ПОРТФОЛИО -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Портфолио</p>
+        <h2 class="h2">Лучше один раз увидеть</h2>
+        <div class="section__head-text">
+          <p>Каждый проект начинается с задачи.</p>
+          <p>Иногда нужно реалистично показать товар для сайта или рекламы. Иногда — представить объект, которого пока не существует. Иногда — показать конструкцию, материалы или детали, которые сложно передать обычной фотографией.</p>
+          <p class="text-muted">В 3D можно заранее увидеть будущий результат и подготовить визуальные материалы ещё до производства или съёмки.</p>
+        </div>
+      </header>
+
+      <div class="projects">
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <div class="media media--4x3">
+              <div class="media__inner"><span class="media__label">Проект 1 — изображение</span></div>
+            </div>
+          </div>
+          <div class="project__body">
+            <p class="project__index">Проект 1</p>
+            <h3 class="h3">[Название проекта]</h3>
+            <dl class="deflist">
+              <dt>Задача</dt>
+              <dd>[Коротко описать задачу клиента.]</dd>
+              <dt>Что сделано</dt>
+              <dd>3D-моделирование, материалы, освещение, настройка сцены и финальная визуализация.</dd>
+              <dt>Результат</dt>
+              <dd>[Серия изображений / ролик / 3D-модель / материалы для рекламы.]</dd>
+            </dl>
+            <a class="link-arrow" href="#">Посмотреть проект</a>
+          </div>
+        </article>
+
+        <article class="project project--reverse" data-reveal>
+          <div class="project__media">
+            <div class="media media--4x3">
+              <div class="media__inner"><span class="media__label">Проект 2 — изображение</span></div>
+            </div>
+          </div>
+          <div class="project__body">
+            <p class="project__index">Проект 2</p>
+            <h3 class="h3">[Название проекта]</h3>
+            <dl class="deflist">
+              <dt>Задача</dt>
+              <dd>[Описание.]</dd>
+              <dt>Что сделано</dt>
+              <dd>[Описание.]</dd>
+              <dt>Результат</dt>
+              <dd>[Описание.]</dd>
+            </dl>
+            <a class="link-arrow" href="#">Посмотреть проект</a>
+          </div>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <div class="media media--4x3">
+              <div class="media__inner"><span class="media__label">Проект 3 — изображение</span></div>
+            </div>
+          </div>
+          <div class="project__body">
+            <p class="project__index">Проект 3</p>
+            <h3 class="h3">[Название проекта]</h3>
+            <dl class="deflist">
+              <dt>Задача</dt>
+              <dd>[Описание.]</dd>
+              <dt>Что сделано</dt>
+              <dd>[Описание.]</dd>
+              <dt>Результат</dt>
+              <dd>[Описание.]</dd>
+            </dl>
+            <a class="link-arrow" href="#">Посмотреть проект</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАДАЧИ -->
+  <section class="section section--alt" id="tasks">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">С какими задачами ко мне обращаются</p>
+        <h2 class="h2">Когда нужно не просто показать объект, а помочь его рассмотреть</h2>
+      </header>
+
+      <div class="cards" data-reveal data-stagger>
+        <article class="card">
+          <span class="card__num">01</span>
+          <h3 class="h4">Товар ещё не готов, а изображения уже нужны</h3>
+          <p>Создам 3D-визуализацию по чертежам, размерам, фотографиям, эскизам или референсам.</p>
+          <p class="text-muted">Так можно подготовить изображения для каталога, презентации или рекламы ещё до появления готового изделия.</p>
+        </article>
+
+        <article class="card">
+          <span class="card__num">02</span>
+          <h3 class="h4">Нужны изображения для сайта или каталога</h3>
+          <p>Создам реалистичные изображения товара в нужных ракурсах с вниманием к форме, материалам, фактуре и важным деталям.</p>
+        </article>
+
+        <article class="card">
+          <span class="card__num">03</span>
+          <h3 class="h4">Нужно показать продукт в движении</h3>
+          <p>3D-анимация помогает продемонстрировать конструкцию, внешний вид, особенности или принцип работы продукта.</p>
+        </article>
+
+        <article class="card">
+          <span class="card__num">04</span>
+          <h3 class="h4">Нужно представить архитектурный проект</h3>
+          <p>Визуализация позволяет заранее увидеть пространство, материалы, освещение и атмосферу будущего объекта.</p>
+        </article>
+
+        <article class="card">
+          <span class="card__num">05</span>
+          <h3 class="h4">Нужна отдельная 3D-модель</h3>
+          <p>Создам модель для дальнейшего использования в визуализации, рекламе, презентации, анимации или другом цифровом проекте.</p>
+        </article>
+
+        <article class="card card--cta">
+          <h3 class="h4">Не нашли свою задачу?</h3>
+          <p>Расскажите, что хотите получить. Возможно, для неё тоже подойдёт 3D.</p>
+          <a class="btn btn--ghost btn--small" href="#contact">Рассказать о задаче</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Что я могу создать</p>
+        <h2 class="h2">Четыре направления работы</h2>
+      </header>
+
+      <div class="services">
+        <article class="service" data-reveal>
+          <div class="service__media">
+            <div class="media media--1x1">
+              <div class="media__inner"><span class="media__label">Пример: предметный рендер</span></div>
+            </div>
+          </div>
+          <div class="service__body">
+            <h3 class="h3">Предметная 3D-визуализация</h3>
+            <p>Для производителей, брендов, интернет-магазинов и рекламных проектов.</p>
+            <p>Создание реалистичных изображений товара для:</p>
+            <ul class="dashlist">
+              <li>сайта;</li>
+              <li>каталога;</li>
+              <li>маркетплейса;</li>
+              <li>рекламных материалов;</li>
+              <li>презентаций;</li>
+              <li>социальных сетей.</li>
+            </ul>
+            <p class="result"><strong>Результат:</strong> готовые изображения продукта в согласованных ракурсах и форматах.</p>
+          </div>
+        </article>
+
+        <article class="service service--reverse" data-reveal>
+          <div class="service__media">
+            <div class="media media--1x1">
+              <div class="media__inner"><span class="media__label">Пример: 3D-модель</span></div>
+            </div>
+          </div>
+          <div class="service__body">
+            <h3 class="h3">3D-моделирование</h3>
+            <p>Создание детализированных цифровых моделей по фотографиям, чертежам, размерам, эскизам и техническому заданию.</p>
+            <p>Работаю как с отдельными предметами, так и со сложными техническими объектами.</p>
+            <p class="result"><strong>Результат:</strong> готовая 3D-модель в согласованном формате.</p>
+          </div>
+        </article>
+
+        <article class="service" data-reveal>
+          <div class="service__media">
+            <div class="media media--1x1">
+              <div class="media__inner"><span class="media__label">Пример: кадр из анимации</span></div>
+            </div>
+          </div>
+          <div class="service__body">
+            <h3 class="h3">3D-анимация</h3>
+            <p>Анимационные ролики помогают показать продукт с разных сторон, передать движение или объяснить особенности конструкции.</p>
+            <p>Подходит для:</p>
+            <ul class="dashlist">
+              <li>рекламы;</li>
+              <li>презентаций;</li>
+              <li>сайтов;</li>
+              <li>социальных сетей;</li>
+              <li>демонстрации продукта.</li>
+            </ul>
+            <p class="result"><strong>Результат:</strong> готовый видеоролик в согласованном формате.</p>
+          </div>
+        </article>
+
+        <article class="service service--reverse" data-reveal>
+          <div class="service__media">
+            <div class="media media--1x1">
+              <div class="media__inner"><span class="media__label">Пример: архвиз</span></div>
+            </div>
+          </div>
+          <div class="service__body">
+            <h3 class="h3">Архитектурная визуализация</h3>
+            <p>Создание изображений зданий, интерьеров и пространств.</p>
+            <p>Помогает представить будущий объект ещё до реализации.</p>
+            <p class="result"><strong>Результат:</strong> реалистичные визуализации объекта или пространства.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОБО МНЕ -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="about" data-reveal>
+        <figure class="about__photo">
+          <div class="media media--portrait">
+            <img src="photo.jpg" alt="Владимир Ишмяков — 3D-художник">
+          </div>
+          <figcaption class="about__caption">Владимир Ишмяков · Москва</figcaption>
+        </figure>
+
+        <div class="about__text">
+          <p class="eyebrow">Обо мне</p>
+          <h2 class="h2">Я Владимир. 3D-художник с фундаментальным художественным образованием</h2>
+          <p>Я работаю с 3D не только как с техническим инструментом.</p>
+          <p>Для меня важны форма, свет, композиция, материал и то, как человек воспринимает объект.</p>
+          <p>Я окончил <strong>МГХПА им. С. Г. Строганова</strong> по специальности «Художник монументально-декоративного искусства», диплом с отличием.</p>
+          <p>Позже продолжил профессиональное развитие в области 3D-моделирования и анимации.</p>
+          <p>Работал с архитектурной визуализацией, рекламными материалами, предметным моделированием, анимацией, сувенирной продукцией и сложными детализированными объектами.</p>
+          <p class="text-muted">В работе соединяю художественную подготовку и современные 3D-инструменты.</p>
+        </div>
+      </div>
+
+      <h3 class="h5 values__title" data-reveal>Что для меня важно</h3>
+      <div class="values" data-reveal data-stagger>
+        <div class="value">
+          <span class="value__num">01</span>
+          <h4 class="h4">Форма</h4>
+          <p>Объект должен выглядеть убедительно не только издалека, но и в деталях.</p>
+        </div>
+        <div class="value">
+          <span class="value__num">02</span>
+          <h4 class="h4">Материалы</h4>
+          <p>Поверхность, фактура, отражения и свет сильно влияют на восприятие продукта.</p>
+        </div>
+        <div class="value">
+          <span class="value__num">03</span>
+          <h4 class="h4">Композиция</h4>
+          <p>Красивое изображение должно помогать рассмотреть сам объект, а не отвлекать от него.</p>
+        </div>
+        <div class="value">
+          <span class="value__num">04</span>
+          <h4 class="h4">Детали</h4>
+          <p>Именно они часто делают изображение реалистичным и убедительным.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЛОГАН -->
+  <section class="quote-band" aria-label="Красота в деталях">
+    <div class="container">
+      <p class="quote-band__text">Красота в деталях</p>
+    </div>
+  </section>
+
+  <!-- ПРОФЕССИОНАЛЬНАЯ ОСНОВА -->
+  <section class="section" id="skills">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Профессиональная основа</p>
+        <h2 class="h2">Работаю с полным циклом создания 3D-контента</h2>
+      </header>
+
+      <ul class="skills" data-reveal data-stagger>
+        <li>3D-моделирование</li>
+        <li>High-poly и low-poly модели</li>
+        <li>UV-развёртка</li>
+        <li>Цифровой скульптинг</li>
+        <li>PBR-текстурирование</li>
+        <li>Материалы и освещение</li>
+        <li>Рендеринг</li>
+        <li>Постобработка</li>
+        <li>Композитинг</li>
+        <li>Анимация</li>
+      </ul>
+
+      <div class="tools" data-reveal>
+        <p class="tools__label">Использую</p>
+        <ul class="tools__list">
+          <li>Blender</li>
+          <li>ZBrush</li>
+          <li>Substance Painter</li>
+          <li>Adobe Photoshop</li>
+          <li>Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРОЦЕСС -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Как проходит работа</p>
+        <h2 class="h2">От первой идеи до готового изображения</h2>
+        <div class="section__head-text">
+          <p>Необязательно самостоятельно составлять профессиональное техническое задание.</p>
+          <p class="text-muted">Достаточно рассказать, что нужно сделать и где будет использоваться результат.</p>
+        </div>
+      </header>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <div class="step__body">
+            <h3 class="h4">Обсуждаем задачу</h3>
+            <p>Вы рассказываете о продукте или проекте. Я задаю уточняющие вопросы и смотрю имеющиеся материалы.</p>
+            <p class="step__sub">Это могут быть:</p>
+            <ul class="dashlist dashlist--compact">
+              <li>фотографии;</li>
+              <li>размеры;</li>
+              <li>чертежи;</li>
+              <li>эскизы;</li>
+              <li>схемы;</li>
+              <li>референсы;</li>
+              <li>ссылки на похожие проекты.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step__body">
+            <h3 class="h4">Определяем формат работы</h3>
+            <p class="step__sub">Согласовываем:</p>
+            <ul class="dashlist dashlist--compact">
+              <li>что нужно создать;</li>
+              <li>количество изображений или длительность анимации;</li>
+              <li>уровень детализации;</li>
+              <li>ракурсы;</li>
+              <li>стиль;</li>
+              <li>сроки;</li>
+              <li>стоимость.</li>
+            </ul>
+            <p class="text-muted">До начала работы понятно, какой результат мы планируем получить.</p>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step__body">
+            <h3 class="h4">Создаю модель и сцену</h3>
+            <p>Разрабатываю 3D-модель, материалы, освещение и композицию.</p>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step__body">
+            <h3 class="h4">Показываю промежуточный результат</h3>
+            <p>Перед финальной визуализацией согласовываем основные элементы проекта.</p>
+            <p class="text-muted">При необходимости вносим изменения в рамках согласованной задачи.</p>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step__body">
+            <h3 class="h4">Подготавливаю финальные материалы</h3>
+            <p>После согласования выполняю финальный рендеринг и передаю готовые файлы.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- РЕЗУЛЬТАТ -->
+  <section class="section" id="deliverables">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Что вы получите</p>
+        <h2 class="h2">Результат, который можно использовать в работе</h2>
+        <div class="section__head-text">
+          <p>В зависимости от проекта это могут быть:</p>
+        </div>
+      </header>
+
+      <ul class="pills" data-reveal data-stagger>
+        <li>Изображения товара для сайта</li>
+        <li>Изображения для каталога</li>
+        <li>Материалы для маркетплейсов</li>
+        <li>Рекламные визуалы</li>
+        <li>Презентационные изображения</li>
+        <li>Серия ракурсов продукта</li>
+        <li>Архитектурные визуализации</li>
+        <li>3D-анимация</li>
+        <li>Отдельная 3D-модель</li>
+      </ul>
+
+      <p class="note note--center" data-reveal>Форматы и состав файлов согласовываются перед началом проекта.</p>
+    </div>
+  </section>
+
+  <!-- ЕСЛИ НЕ ЗАКАЗЫВАЛИ 3D -->
+  <section class="section section--alt" id="doubts">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Если вы раньше не заказывали 3D</p>
+        <h2 class="h2">Необязательно разбираться в профессиональных терминах</h2>
+      </header>
+
+      <div class="doubts" data-reveal data-stagger>
+        <article class="doubt">
+          <h3 class="h3">«У меня нет технического задания»</h3>
+          <p>Это не проблема.</p>
+          <p>Можно начать с фотографий, размеров, чертежей, эскиза или просто описания задачи.</p>
+          <p class="text-muted">Я подскажу, какая информация понадобится для работы.</p>
+        </article>
+        <article class="doubt">
+          <h3 class="h3">«Я пока не понимаю, какой формат мне нужен»</h3>
+          <p>Расскажите, где планируете использовать изображения.</p>
+          <p class="text-muted">После этого можно определить, нужен один ракурс, серия изображений, отдельная модель или анимация.</p>
+        </article>
+        <article class="doubt">
+          <h3 class="h3">«Боюсь, что результат будет не таким, как я представляю»</h3>
+          <p>Поэтому основные решения согласовываются до финального рендера.</p>
+          <p class="text-muted">Промежуточный результат помогает вовремя увидеть, что нужно изменить.</p>
+        </article>
+        <article class="doubt">
+          <h3 class="h3">«Не понимаю, сколько это будет стоить»</h3>
+          <p>Цена зависит от сложности модели, уровня детализации, количества изображений, анимации и исходных материалов.</p>
+          <p class="text-muted">Перед началом работы вы будете понимать объём проекта и его стоимость.</p>
+        </article>
+        <article class="doubt">
+          <h3 class="h3">«У меня небольшой проект»</h3>
+          <p>Необязательно заказывать большой комплекс работ.</p>
+          <p class="text-muted">Если вашу задачу решает одна модель или один ракурс, можно начать с этого.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- СТОИМОСТЬ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Стоимость</p>
+        <h2 class="h2">Цена зависит от задачи</h2>
+        <div class="section__head-text">
+          <p>Два внешне похожих проекта могут сильно отличаться по объёму работы.</p>
+        </div>
+      </header>
+
+      <div class="pricing" data-reveal>
+        <div class="pricing__factors">
+          <h3 class="h5">На стоимость влияют</h3>
+          <ul class="dashlist">
+            <li>сложность объекта;</li>
+            <li>необходимость моделирования с нуля;</li>
+            <li>количество деталей;</li>
+            <li>материалы и текстуры;</li>
+            <li>количество ракурсов;</li>
+            <li>окружение;</li>
+            <li>анимация;</li>
+            <li>разрешение финальных изображений;</li>
+            <li>сроки выполнения.</li>
+          </ul>
+        </div>
+
+        <div class="pricing__grid">
+          <div class="price">
+            <span class="price__num">01</span>
+            <h3 class="h3">Предметная визуализация</h3>
+            <p class="price__value">Стоимость: после оценки задачи</p>
+          </div>
+          <div class="price">
+            <span class="price__num">02</span>
+            <h3 class="h3">3D-моделирование</h3>
+            <p class="price__value">Стоимость: после оценки задачи</p>
+          </div>
+          <div class="price">
+            <span class="price__num">03</span>
+            <h3 class="h3">3D-анимация</h3>
+            <p class="price__value">Стоимость: после оценки задачи</p>
+          </div>
+          <div class="price">
+            <span class="price__num">04</span>
+            <h3 class="h3">Архитектурная визуализация</h3>
+            <p class="price__value">Стоимость: после оценки задачи</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing__cta" data-reveal>
+        <p class="h3">Напишите, что хотите создать, и приложите имеющиеся материалы.</p>
+        <p class="text-muted">Я посмотрю задачу и смогу сориентировать по объёму работы, срокам и стоимости.</p>
+        <a class="btn" href="#contact">Рассчитать стоимость проекта</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section section--alt" id="reviews">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Отзывы</p>
+        <h2 class="h2">Что говорят о работе со мной</h2>
+        <div class="section__head-text">
+          <p class="text-muted">Здесь лучше использовать только реальные отзывы заказчиков.</p>
+        </div>
+      </header>
+
+      <div class="reviews" data-reveal data-stagger>
+        <figure class="review">
+          <blockquote>[Реальный текст отзыва.]</blockquote>
+          <figcaption>
+            <span class="review__author">[Имя клиента / компания]</span>
+            <span class="review__project">Проект: [вид работы]</span>
+          </figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>[Реальный текст отзыва.]</blockquote>
+          <figcaption>
+            <span class="review__author">[Имя клиента / компания]</span>
+            <span class="review__project">Проект: [вид работы]</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Частые вопросы</p>
+        <h2 class="h2">Коротко о главном</h2>
+      </header>
+
+      <div class="faq" data-reveal>
+        <details class="faq__item" open>
+          <summary><span class="faq__num">01</span>Можно обратиться, если у меня есть только идея?</summary>
+          <div class="faq__body">
+            <p>Да.</p>
+            <p>Расскажите, что хотите показать и где планируете использовать результат. После этого определим, какие материалы нужны для начала работы.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span class="faq__num">02</span>Обязательно иметь профессиональные чертежи?</summary>
+          <div class="faq__body">
+            <p>Нет.</p>
+            <p>В зависимости от задачи могут подойти размеры, фотографии, эскизы, схемы или другие материалы.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span class="faq__num">03</span>Можно сделать несколько вариантов одного товара?</summary>
+          <div class="faq__body">
+            <p>Да.</p>
+            <p>Например, разные цвета, материалы или варианты отделки. Количество вариантов лучше согласовать до начала проекта.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span class="faq__num">04</span>Можно заказать только одно изображение?</summary>
+          <div class="faq__body">
+            <p>Да.</p>
+            <p>Формат проекта зависит от вашей задачи.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span class="faq__num">05</span>Сколько времени занимает работа?</summary>
+          <div class="faq__body">
+            <p>Срок зависит от сложности объекта, количества визуализаций и необходимости анимации.</p>
+            <p>Сроки согласовываются до начала проекта.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span class="faq__num">06</span>Можно внести изменения?</summary>
+          <div class="faq__body">
+            <p>Да.</p>
+            <p>Промежуточные этапы позволяют согласовать основные решения до финального рендеринга.</p>
+            <p>Количество и формат правок согласовываются перед началом работы.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span class="faq__num">07</span>Можно ли использовать готовые изображения в рекламе?</summary>
+          <div class="faq__body">
+            <p>Назначение материалов и условия использования лучше определить при обсуждении проекта.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТ -->
+  <section class="section section--contact" id="contact">
+    <div class="container contact">
+      <div class="contact__text" data-reveal>
+        <p class="eyebrow">Обсудить проект</p>
+        <h2 class="h2">Есть идея? Давайте посмотрим, как её можно показать</h2>
+        <p>Необязательно сразу знать все технические детали.</p>
+        <p class="contact__sub">Можно прислать:</p>
+        <ul class="dashlist">
+          <li>фотографию;</li>
+          <li>чертёж;</li>
+          <li>ссылку;</li>
+          <li>эскиз;</li>
+          <li>пример понравившейся работы;</li>
+          <li>или просто описать задачу несколькими предложениями.</li>
+        </ul>
+        <p class="text-muted">Я посмотрю материалы, задам необходимые вопросы и предложу возможный формат работы.</p>
+      </div>
+
+      <form class="form" action="#" method="post" enctype="multipart/form-data" data-reveal>
+        <h3 class="form__title">Форма заявки</h3>
+
+        <p class="field">
+          <label for="name">Ваше имя</label>
+          <input id="name" name="name" type="text" placeholder="Введите имя" required>
+        </p>
+
+        <p class="field">
+          <label for="contact-way">Как с вами связаться</label>
+          <input id="contact-way" name="contact" type="text" placeholder="Telegram / Email / телефон" required>
+        </p>
+
+        <p class="field">
+          <label for="task">Что нужно сделать</label>
+          <textarea id="task" name="task" rows="4" placeholder="Коротко расскажите о проекте"></textarea>
+        </p>
+
+        <p class="field">
+          <label for="files">Прикрепить материалы</label>
+          <input id="files" name="files" type="file" multiple>
+          <span class="field__hint">Фото / чертежи / эскизы / референсы</span>
+        </p>
+
+        <button class="btn btn--block" type="submit">Обсудить проект</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <p class="footer__name">Владимир Ишмяков</p>
+      <p class="footer__role">3D-художник / 3D Generalist</p>
+      <p class="footer__geo">Москва · работа с проектами удалённо</p>
+    </div>
+    <div class="footer__links">
+      <p><span class="footer__label">Портфолио</span> <a href="#">ArtStation</a></p>
+      <p><a class="footer__up" href="#top">Наверх ↑</a></p>
+    </div>
+    <p class="footer__slogan">Красота в деталях</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script type="module" src="glow-cursor.js"></script>
+</body>
+</html>
